@@ -63,6 +63,11 @@ const AddProduct = () => {
 
     console.log(addProdData);
     dispatch({ type: "ADD_PRODUCT", payload: addProdData });
+
+    setProdname("");
+    setDescription("");
+    setPrice("");
+    setQty("");
   };
 
   return (

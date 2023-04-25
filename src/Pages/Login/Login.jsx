@@ -83,19 +83,19 @@ const Login = () => {
                   : "Don't share your password with anyone.!"
               }
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               control={<Checkbox name="checkedB" color="primary" />}
               label="Remember me"
-            />
+            /> */}
             <Button type="submit" color="primary" variant="contained" fullWidth>
               Login
             </Button>
-            <Typography>
+            {/* <Typography>
               <Link href="#">Forgot Password.?</Link>
             </Typography>
             <Typography>
               Do you have an account.?<Link href="#"> Sign Up</Link>
-            </Typography>
+            </Typography> */}
           </form>
         </Paper>
       </Grid>

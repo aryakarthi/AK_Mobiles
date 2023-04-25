@@ -28,8 +28,6 @@ const MyCart = () => {
   const CartItems = state.cart;
   console.log(CartItems);
 
-  
-
   const totalAmount = CartItems.reduce((total, item) => {
     return total + item.prodPrice * item.qty;
   }, 0);
@@ -96,7 +94,9 @@ const MyCart = () => {
                         </Button>
                       </ButtonGroup>
                     </TableCell>
-                    <TableCell align="right">{"Total"}</TableCell>
+                    <TableCell align="right">
+                      {item.prodPrice * item.qty}
+                    </TableCell>
                     <TableCell align="right">
                       <IconButton
                         aria-label="delete"
@@ -115,6 +115,7 @@ const MyCart = () => {
               </TableBody>
             </Table>
           </TableContainer>
+          <Typography align="right" variant="h5" padding={"60px"}>Grand Total: {totalAmount}</Typography>
         </Container>
       </Stack>
     </>
